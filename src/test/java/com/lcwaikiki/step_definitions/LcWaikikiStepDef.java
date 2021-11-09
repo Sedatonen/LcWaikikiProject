@@ -3,7 +3,6 @@ package com.lcwaikiki.step_definitions;
 import com.lcwaikiki.pages.*;
 import com.lcwaikiki.utilities.*;
 import io.cucumber.java.en.*;
-import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
@@ -47,7 +46,7 @@ public class LcWaikikiStepDef {
         BrowserUtils.waitFor(1);
         String actualUrl = driver.getCurrentUrl();
         String expectedUrl = "https://www.lcwaikiki.com/tr-TR/TR";
-        Assert.assertEquals(expectedUrl, actualUrl);
+        assertEquals(expectedUrl, actualUrl);
     }
 
     @When("in the search area write {string} and click search button")
@@ -84,7 +83,7 @@ public class LcWaikikiStepDef {
 
         basketProductPrice = basketPage.basketProductPrice();
         System.out.println("Spetteki Ürünün Fiyatı : " + basketProductPrice);
-        Assert.assertEquals(choosingProductPrice, basketProductPrice);
+        assertEquals(choosingProductPrice, basketProductPrice);
         System.out.println("verify product price");
     }
 

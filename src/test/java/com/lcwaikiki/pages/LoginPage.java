@@ -17,6 +17,5 @@ public class LoginPage extends BasePage {
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);
         loginBtn.click();
-
     }
 }

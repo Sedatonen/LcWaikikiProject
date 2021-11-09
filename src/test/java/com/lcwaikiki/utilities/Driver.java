@@ -9,9 +9,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Driver {
     public Driver() {
-
     }
-
     private static WebDriver driver;
 
     public static WebDriver get() {
@@ -36,10 +34,8 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
                     break;
-
             }
         }
-
         return driver;
     }
 
@@ -47,9 +43,6 @@ public class Driver {
         if (driver != null) {
             driver.quit();
             driver = null;
-
         }
     }
-
-
 }

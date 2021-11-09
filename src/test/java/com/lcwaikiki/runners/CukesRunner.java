@@ -13,8 +13,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         publish = true,
         tags = ""
-
-
 )
+
 public class CukesRunner {
 }

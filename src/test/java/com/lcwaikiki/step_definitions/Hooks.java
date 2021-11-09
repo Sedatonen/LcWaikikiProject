@@ -6,7 +6,6 @@ import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
@@ -14,7 +13,6 @@ public class Hooks {
     public WebDriver driver;
     public WebDriverWait wait;
     public Actions action;
-
 
     @Before
     public void setUp() {
@@ -29,7 +27,6 @@ public class Hooks {
 
     @After
     public void tearDown() {
-
         Driver.closeDriver();
     }
 }

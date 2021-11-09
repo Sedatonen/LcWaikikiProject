@@ -24,7 +24,6 @@ public class BasketPage extends BasePage {
     @FindBy(className = "cart-empty-title")
     public WebElement nullMessage;
 
-
     public String basketProductPrice() {
         return basketProductPrice.getText();
     }
@@ -39,14 +38,10 @@ public class BasketPage extends BasePage {
 
     }
 
-
     public void deleteProduct() {
         BrowserUtils.waitForClickablility(deleteProductBtn, 5);
         deleteProductBtn.click();
         BrowserUtils.waitForClickablility(confirmDeleteProductBtn, 5);
         confirmDeleteProductBtn.click();
-
     }
-
-
 }
